@@ -1,7 +1,4 @@
-# DaggerTemplate
-Template for Android Studio wizard
-
-While using this template for Dagger type project remember to:
+While using dagger remember to:
 1. In Project: build.gradle:
 	Add APT plugin:
 	classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
