@@ -1,5 +1,17 @@
 # DaggerTemplate
-Template for Android Studio wizard
+Template for Android Studio wizard for projects using Dagger
+Create new folder in %Android Studio install directory%\plugins\android\lib\templates\activities\ and name as you wish
+Copy everything from repo to fresh created directory and if you have Android Studio opened close it and run again. Then when you will be creating new project for Android you should see along with
+Basic Activity or Empty Activity the template named Dagger App.
+
+Poorly, I didn't manage to write template for some sections for project, so you have to configure them for yourself as described below and in file which you will see after project has been created.
+
+You can configure project with wizard to use common libraries:
+1. Retrofit 2b4
+2. OkHttp 3
+3. GsonConverterFactory
+4. EventBus 3
+5. RxJava and RxJavaCallAdapterFactory
 
 While using this template for Dagger type project remember to:
 1. In Project: build.gradle:
