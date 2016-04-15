@@ -31,16 +31,16 @@
 	<#if retrofit>
 	<instantiate from="root/src/app_package/di/modules/NetworkModule.java.ftl"
                    to="${escapeXmlAttribute(srcOut)}/di/modules/NetworkModule.java" />
-	<dependency mavenUrl="com.squareup.retrofit2:retrofit:2.0.0-beta4"/>
+	<dependency mavenUrl="com.squareup.retrofit2:retrofit:2.0.2"/>
 	<dependency mavenUrl="com.squareup.okhttp3:okhttp:3.2.0"/>
 	<dependency mavenUrl="com.squareup.okhttp3:logging-interceptor:3.2.0"/>
 		<#if gson>
-			<dependency mavenUrl="com.squareup.retrofit2:converter-gson:2.0.0-beta4"/>
+			<dependency mavenUrl="com.squareup.retrofit2:converter-gson:2.0.2"/>
 		</#if>
 		<#if rxjava>
 			<dependency mavenUrl="io.reactivex:rxandroid:1.1.0"/>
 			<dependency mavenUrl="io.reactivex:rxjava:1.1.0"/>
-			<dependency mavenUrl="com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4"/>
+			<dependency mavenUrl="com.squareup.retrofit2:adapter-rxjava:2.0.2"/>
 		</#if>
 	</#if>
 	<#if eventbus>
