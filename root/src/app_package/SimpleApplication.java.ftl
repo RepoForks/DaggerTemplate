@@ -8,8 +8,7 @@ import ${packageName}.di.modules.ApplicationModule;
 
 public class ${applicationClass} extends Application {
 
-	public static ApplicationComponent component;
-    public static ${applicationClass} instance;
+	public ApplicationComponent applicationComponent;
 	<#if retrofit>public static final String ENDPOINT = "http://webservice.com";</#if>
 
     @Override
@@ -20,11 +19,5 @@ public class ${applicationClass} extends Application {
 				<#if retrofit>.networkModule(new NetworkModule())</#if>
                 .build();
 
-        instance = this;
-
-    }
-
-    public static ${applicationClass} getApp() {
-        return instance;
     }
 }
