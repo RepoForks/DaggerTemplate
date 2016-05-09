@@ -14,7 +14,7 @@ public class ${applicationClass} extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        component = DaggerApplicationComponent.builder()
+        applicationComponent = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this))
 				<#if retrofit>.networkModule(new NetworkModule())</#if>
                 .build();

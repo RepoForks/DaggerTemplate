@@ -8,7 +8,7 @@ public class ${activityClass} extends ${superClass} {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-		(${applicationClass}.getApplication()).applicationComponent.inject(this);
+		(${applicationClass}getApplication()).applicationComponent.inject(this);
 <#if generateLayout>
         setContentView(R.layout.${layoutName});
 </#if>
